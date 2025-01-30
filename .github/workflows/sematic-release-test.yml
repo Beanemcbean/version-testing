@@ -41,4 +41,4 @@ jobs:
           NPM_TOKEN: ""
         run: |
           npm install @semantic-release/exec -D
-          npx semantic-release -d
+          npx semantic-release
