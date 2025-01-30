@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Beanemcbean/version-testing.git"
   },
+  "private": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
