@@ -16,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/Beanemcbean/version-testing/issues"
   },
-  "homepage": "https://github.com/Beanemcbean/version-testing#readme"
+  "homepage": "https://github.com/Beanemcbean/version-testing#readme",
+  "release": {
+    "branches": ["master", "next"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "echo Prepare for version ${nextRelease.version}",
+          "publishCmd": "echo Publish version: ${nextRelease.version}"
+        }
+      ]
+    ]
+  }
 }
