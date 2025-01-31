@@ -23,8 +23,8 @@
       "main",
       "next",
       {
-        "name": "*",
-        "prerelease": true
+        "name": "[a-zA-Z0-9\\/-]*",
+        "prerelease": "${name.replace('/', '-').toLowerCase()}"
       }
     ],
     "plugins": [
