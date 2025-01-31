@@ -23,7 +23,7 @@
       "main",
       "next",
       {
-        "name": "beta",
+        "name": "*",
         "prerelease": true
       }
     ],
