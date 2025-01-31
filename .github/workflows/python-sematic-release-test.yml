@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Python Semabtic Release
+name: Python Semantic Release
 
 # Controls when the workflow will run
 on:
@@ -24,5 +24,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install python-semantic-release
-          semantic-release -vv version --print
+          cd $GITHUB_WORKSPACE
+          semantic-release -vv version
           semantic-release publish
