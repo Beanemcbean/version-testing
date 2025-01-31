@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v1.3.1 (2025-01-31)
+
+### Bug Fixes
+
+- Checkout fetch depth 0
+  ([`f0dfad7`](https://github.com/Beanemcbean/version-testing/commit/f0dfad7f938c11006d186e717fa12df562a73f75))
+
+
 ## v1.3.0 (2025-01-31)
 
 ### Features
