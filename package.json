@@ -19,7 +19,14 @@
   },
   "homepage": "https://github.com/Beanemcbean/version-testing#readme",
   "release": {
-    "branches": ["main", "next"],
+    "branches": [
+      "main",
+      "next",
+      {
+        "name": "[a-zA-Z0-9\\/-]*",
+        "prerelease": "${name.replace('/', '-').toLowerCase()}"
+      }
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
