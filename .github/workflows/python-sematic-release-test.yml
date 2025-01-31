@@ -24,6 +24,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pip install python-semantic-release
-          cd $GITHUB_WORKSPACE
           semantic-release -vv version
           semantic-release publish
